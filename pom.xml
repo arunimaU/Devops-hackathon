@@ -1,4 +1,3 @@
-  
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -26,6 +25,7 @@
         <module>lesson-utils</module>
         <module>lesson-1</module>
         <module>lesson-2</module>
+
     </modules>
 
     <dependencies>
@@ -46,7 +46,7 @@
             <version>2.5.1</version>
         </dependency>
     </dependencies>
-    <distributionManagement>
+  <distributionManagement>
   <repository>
     <id>nexus</id>
     <url>http://13.235.245.92:8081/nexus/content/repositories/releases</url>
@@ -76,9 +76,9 @@
 
         </plugins>
     </build>
-    <repositories>
+  <repositories>
      <repository>
-      <id>my-internal-site</id>
+      <id>incoming</id>
       <url>https://watt-db1.workfusion.com/nexus/content/repositories/ml-sdk/</url>
      </repository>
     </repositories>
