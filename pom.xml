@@ -25,9 +25,14 @@
         <module>lesson-utils</module>
         <module>lesson-1</module>
         <module>lesson-2</module>
-
     </modules>
 
+     <scm>
+       <connection>scm:https://github.com/arunimaU/Devops-hackathon.git</connection>
+       <url>https://github.com/arunimaU/Devops-hackathon.git</url>
+       <developerConnection>scm:git:https://github.com/arunimaU/Devops-hackathon.git</developerConnection>
+      <tag>rel-1.6</tag>
+  </scm>
     <dependencies>
         <dependency>
             <groupId>com.workfusion.ml</groupId>
