@@ -31,7 +31,7 @@
        <connection>scm:https://github.com/arunimaU/Devops-hackathon.git</connection>
        <url>https://github.com/arunimaU/Devops-hackathon.git</url>
        <developerConnection>scm:git:https://github.com/arunimaU/Devops-hackathon.git</developerConnection>
-      <tag>rel-1.6</tag>
+      <tag>release-1.0</tag>
   </scm>
     <dependencies>
         <dependency>
