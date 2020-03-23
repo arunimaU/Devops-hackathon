@@ -25,8 +25,14 @@
         <module>lesson-utils</module>
         <module>lesson-1</module>
         <module>lesson-2</module>
-
     </modules>
+     <scm>
+       <connection>scm:https://github.com/arunimaU/Devops-hackathon.git</connection>
+       <url>https://github.com/arunimaU/Devops-hackathon.git</url>
+       <developerConnection>scm:git:https://github.com/arunimaU/Devops-hackathon.git</developerConnection>
+      <tag>rel-1.6</tag>
+  </scm>
+
 
     <dependencies>
         <dependency>
@@ -47,10 +53,14 @@
         </dependency>
     </dependencies>
   <distributionManagement>
-  <repository>
-    <id>releases</id>
-    <url>http://13.235.245.92:8081/nexus/content/repositories/releases</url>
-  </repository>
+   <snapshotRepository>
+      <id>nexus</id>
+      <url>http://13.232.140.108:8081/nexus/content/repositories/snapshots</url>
+   </snapshotRepository>
+   <repository>
+      <id>nexus</id>
+      <url>http://13.232.140.108:8081/nexus/content/repositories/releases</url>
+   </repository>
 </distributionManagement>
 
     <build>
