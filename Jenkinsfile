@@ -9,8 +9,11 @@ pipeline {
 	stage ('Build')
 	   
 	    {steps{
-                sh '/usr/share/maven/bin/mvn clean package -Dmaven.test.skip=true'
+                sh '/opt/maven/bin/mvn clean package -Dmaven.test.skip=true'
 	    }    }
+		stage ('release')
+		{steps{
+			sh '/opt/maven/bin/mvn --batch-mode release:clean release:prepare release:perform -DreleaseVersion-1.0 -DmasterVersion-1.0-SNAPSHOT'
          stage ('Update the Version')
 		{ steps {
                 sh '/usr/share/maven/bin/mvn build-helper:parse-version versions:set -DnewVersion=\'${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.nextIncrementalVersion}\' -DgenerateBackupPoms=false'
